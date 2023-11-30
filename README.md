@@ -10,8 +10,11 @@ Key Features:
 
 How to Use:
 1.Clone the repository.
+
 2.Open the index.html file in your preferred web browser.
+
 3.Start coding, testing, and refining your projects effortlessly.
+
 
 Explore the world of coding with CodeStar, your go-to online IDE for productive and collaborative programming.
 
