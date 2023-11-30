@@ -1,7 +1,9 @@
-(https://github.com/SreenishSharma83/CodeStar_Online_IDE/assets/112803560/cf127021-231e-48dc-832e-c81f3a5e3af3)
+![IDE_screenshot](https://github.com/SreenishSharma83/CodeStar_Online_IDE/assets/112803560/a32787a0-4cf3-484c-9e60-ee35f3b8f186)
+
 🌟 CodeStar_Online_IDE 🌟
 
 CodeStar is a feature-rich online Integrated Development Environment (IDE) designed for seamless coding experiences. Powered by the Monaco Editor, HTML, CSS, and JavaScript, this IDE offers a user-friendly interface for writing, editing, and executing code in various programming languages.
+
 
 Key Features:
 
