@@ -159,12 +159,12 @@ function handleResult(data) {
 
     stdoutEditor.setValue(output);
 
-    if (output !== "") {
-        var dot = document.getElementById("stdout-dot");
-        if (!dot.parentElement.classList.contains("lm_active")) {
-            dot.hidden = false;
-        }
-    }
+    // if (output !== "") {
+    //     var dot = document.getElementById("stdout-dot");
+    //     if (!dot.parentElement.classList.contains("lm_active")) {
+    //         dot.hidden = false;
+    //     }
+    // }
 
     $runBtn.removeClass("loading");
 }
