@@ -226,9 +226,6 @@ function run() {
     var compilerOptions = $compilerOptions.val();
     var commandLineArguments = $commandLineArguments.val();
 
-    if (parseInt(languageId) === 44) {
-        sourceValue = sourceEditor.getValue();
-    }
 
     var data = {
         source_code: sourceValue,
@@ -260,31 +257,7 @@ function run() {
         });
     }
 
-    var fetchAdditionalFiles = false;
-    if (parseInt(languageId) === 82) {
-        if (sqliteAdditionalFiles === "") {
-            fetchAdditionalFiles = true;
-            $.ajax({
-                url: `./data/additional_files_zip_base64.txt`,
-                type: "GET",
-                async: true,
-                contentType: "text/plain",
-                success: function (responseData, textStatus, jqXHR) {
-                    sqliteAdditionalFiles = responseData;
-                    data["additional_files"] = sqliteAdditionalFiles;
-                    sendRequest(data);
-                },
-                error: handleRunError
-            });
-        }
-        else {
-            data["additional_files"] = sqliteAdditionalFiles;
-        }
-    }
-
-    if (!fetchAdditionalFiles) {
-        sendRequest(data);
-    }
+    sendRequest(data);
 }
 
 function fetchSubmission(submission_token, iteration) {
