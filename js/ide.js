@@ -159,13 +159,6 @@ function handleResult(data) {
 
     stdoutEditor.setValue(output);
 
-    // if (output !== "") {
-    //     var dot = document.getElementById("stdout-dot");
-    //     if (!dot.parentElement.classList.contains("lm_active")) {
-    //         dot.hidden = false;
-    //     }
-    // }
-
     $runBtn.removeClass("loading");
 }
 
@@ -212,8 +205,6 @@ function run() {
     } else {
         $runBtn.addClass("loading");
     }
-
-    document.getElementById("stdout-dot").hidden = true;
 
     stdoutEditor.setValue("");
 
